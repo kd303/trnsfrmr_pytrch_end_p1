@@ -1,4 +1,4 @@
-##Assignment Questions
+# Assignment - 01 Questions/Answers
 # What is a neural network neuron?
 # What is the use of the learning rate?
 # How are weights initialized?
