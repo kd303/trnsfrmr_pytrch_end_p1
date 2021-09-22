@@ -42,5 +42,13 @@ Neural networks are trained using optimization process where to calculate the pr
 
 Gradient flow calculus is the set of rules used by the backprop algorithm to comput gradients. Back prop works by calculating the gradients a tthe out of the network then propogate or flowing these gradients back into network.
 
+![Back prop Image](/assignment_01/backprop2.png) 
 
+Here for one layer lets say if **∂L/∂z** is known then using the chain rule of differentiation the gradients **∂L/∂x** & **∂L/∂y** can be computed as:
 
+ 1. **∂L/∂x** = **∂L/∂z** * **∂z/∂x** & 
+ 2. **∂L/∂y** = **∂L/∂z** * **∂z/∂y**
+
+Using this rule the weights can be updated and it ensures that the rate of change (say original error at output layer) is flowed to all the way subsequently till first hidden layer and it ensures are all weights usually get affected by each error that gets calculated at every single epochs. 
+
+[Image source](https://srdas.github.io/DLBook/TrainingNNsBackprop.html#gradient-flow-calculus)
