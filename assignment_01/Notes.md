@@ -5,3 +5,4 @@ Fully connected layer would increase number of neurons and hence by that measure
 [Distill](https://distill.pub/2017/feature-visualization/) - feature visualization
 [Backpropagation](https://medium.com/@sallyrobotics.blog/backpropagation-and-its-alternatives-c09d306aae4c)
 Static Word embedding fail to capture polysemy -> Generates same embedding for the same word in different context. Language models calcuates the probability distribution based on next word. in a way it gets ride of all additional unrelate dimesions presented in static word embedding. (Word embeddings changes dynamically when new layers are added where as in Word2Vec models the word is loked at without context,
+[DAWN Benchmarks](https://dawn.cs.stanford.edu/benchmark/) - For optimzed GPU/memory usage training and tunning strategies
