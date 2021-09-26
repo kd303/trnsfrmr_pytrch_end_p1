@@ -1,8 +1,8 @@
-Input Layer is input neuron with input values
-Fully connected layer would increase number of neurons and hence by that measures the memory require to train the model
-[Large learning rate](https://www.youtube.com/watch?v=bR7z2MA0p-o&t=658s) also [DAWN Bench](https://dawn.cs.stanford.edu/benchmark/)
-[Human Biology](https://www.youtube.com/watch?v=NNnIGh9g6fA&t=1s)
-[Distill](https://distill.pub/2017/feature-visualization/) - feature visualization
-[Backpropagation](https://medium.com/@sallyrobotics.blog/backpropagation-and-its-alternatives-c09d306aae4c)
-Static Word embedding fail to capture polysemy -> Generates same embedding for the same word in different context. Language models calcuates the probability distribution based on next word. in a way it gets ride of all additional unrelate dimesions presented in static word embedding. (Word embeddings changes dynamically when new layers are added where as in Word2Vec models the word is loked at without context,
-[DAWN Benchmarks](https://dawn.cs.stanford.edu/benchmark/) - For optimzed GPU/memory usage training and tunning strategies
+  - Input Layer is input neuron with input values
+  - Fully connected layer would increase number of neurons and hence by that measures the memory require to train the model
+  - [Large learning rate](https://www.youtube.com/watch?v=bR7z2MA0p-o&t=658s) also [DAWN Bench](https://dawn.cs.stanford.edu/benchmark/)
+  - [Human Biology](https://www.youtube.com/watch?v=NNnIGh9g6fA&t=1s)
+  - [Distill](https://distill.pub/2017/feature-visualization/) - feature visualization
+  - [Backpropagation](https://medium.com/@sallyrobotics.blog/backpropagation-and-its-alternatives-c09d306aae4c)
+  - Static Word embedding fail to capture polysemy -> Generates same embedding for the same word in different context. Language models calcuates the probability distribution based on next word. in a way it gets ride of all additional unrelate dimesions presented in static word embedding. (Word embeddings changes dynamically when new layers are added where as in Word2Vec models the word is loked at without context,
+  - [DAWN Benchmarks](https://dawn.cs.stanford.edu/benchmark/) - For optimzed GPU/memory usage training and tunning strategies
