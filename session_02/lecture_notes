@@ -1,0 +1,6 @@
+1. Embedding - Generating semantic relationship between words appearing in similar context and Transformer models learns the context and they change the embedding at every layer (requires more understanding - Possibily attention of each word decides the next word - that itself can be learned?)
+2. (Embedding Understanding)[https://medium.com/@everlearner42/how-contextual-word-embeddings-are-learnt-in-nlp-a0a52fcad1f9]
+3. (Understnading static embeddings)[https://nlp.stanford.edu//~johnhew//structural-probe.html?utm_source=quora&utm_medium=referral#the-structural-probe]
+  - Word embedding does not learn Polysemy(same word/symbol but different meaning in different context - Sound - noise or solid? Depends on "Sound of music" or "Sound advice")
+  - So static word embedding would generate same vector for word sound in above examples
+ 4. Language models generate probability distributions (given the context of previous and 
