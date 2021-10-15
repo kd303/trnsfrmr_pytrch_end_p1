@@ -1,4 +1,4 @@
-Refer to **```PyTorchAssignment.ipynb```** for below
+Refer to **```(PyTorchAssignment.ipynb)[./pytorch_intro/PyTorchAssginment1.ipynb]```** for below
 
 ## Data representation & Data generation Strategy
 
