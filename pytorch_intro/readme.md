@@ -4,9 +4,63 @@ In the solution the approach that is considered is extending the ```MNIST``` cla
 Refer to ```MyDataset``` class which extends the MNIST and used in DataLoader
 
 
-## how you have combined the two inputs (basically which layer you are combining)
+## how the two inputs are combined
 
-must mention how you are evaluating your results 
-must mention "what" results you finally got and how did you evaluate your results
-must mention what loss function you picked and why!
-training MUST happen on the GPU
+![neuralnet](/pytorch_intro/nn.jpg) 
+Refer to above image which describe the the concatination happens after image is passed throught convolution layers and random input is converted to one-hot encoded vector.
+
+## Loss function selection and Why
+
+Even though we are summing in overall function, CrossEntropy was only kept as loss function. Here the Loss is calculated separatey
+
+And in cases where 
+
+  - ```predicted_image_digit >= sum``` *then* ```loss = cross_entropy(predictied_image_digit)```
+  - ```predicted_image_digit <= sum``` *then* ```loss = cross_entropy(sum)```
+
+This is the interesting part since ```log(a+b) != log(a) + log(b)```
+
+See the detailed [explanation](https://cdsmithus.medium.com/the-logarithm-of-a-sum-69dd76199790)
+
+## evaluating your results 
+
+Evaluation functions determines the correct digits vs corrrect sums..
+
+
+
+
+## Training Logs
+Printing the model, print twice since once on CPU and other on GPU
+```
+CustomCNN(
+  (conv1): Conv2d(1, 6, kernel_size=(5, 5), stride=(1, 1))
+  (conv2): Conv2d(6, 12, kernel_size=(5, 5), stride=(1, 1))
+  (fc1): Linear(in_features=212, out_features=212, bias=True)
+  (fc2): Linear(in_features=212, out_features=100, bias=True)
+  (out): Linear(in_features=100, out_features=29, bias=True)
+  (preprocess_rand1): Linear(in_features=10, out_features=20, bias=True)
+  (one_hot_input): One_Hot(10)
+)
+CrossEntropyLoss()
+CustomCNN(
+  (conv1): Conv2d(1, 6, kernel_size=(5, 5), stride=(1, 1))
+  (conv2): Conv2d(6, 12, kernel_size=(5, 5), stride=(1, 1))
+  (fc1): Linear(in_features=212, out_features=212, bias=True)
+  (fc2): Linear(in_features=212, out_features=100, bias=True)
+  (out): Linear(in_features=100, out_features=29, bias=True)
+  (preprocess_rand1): Linear(in_features=10, out_features=20, bias=True)
+  (one_hot_input): One_Hot(10)
+)
+```
+Following are the training Logs... Loss is not reducing after trying various lr and batch sizes...
+
+epoch 0 total_correct_digits: 5928 total_correct_sum: 6160 loss: 4906.605236053467
+epoch 1 total_correct_digits: 5929 total_correct_sum: 6088 loss: 4907.698986053467
+epoch 2 total_correct_digits: 5927 total_correct_sum: 6006 loss: 4909.011486053467
+epoch 3 total_correct_digits: 5927 total_correct_sum: 6026 loss: 4908.683361053467
+epoch 4 total_correct_digits: 5929 total_correct_sum: 5956 loss: 4909.761486053467
+epoch 5 total_correct_digits: 5928 total_correct_sum: 5988 loss: 4909.308361053467
+epoch 6 total_correct_digits: 5929 total_correct_sum: 5963 loss: 4909.683361053467
+epoch 7 total_correct_digits: 5928 total_correct_sum: 6023 loss: 4908.761486053467
+epoch 8 total_correct_digits: 5928 total_correct_sum: 5928 loss: 4910.292736053467
+epoch 9 total_correct_digits: 5929 total_correct_sum: 6025 loss: 4908.714611053467
