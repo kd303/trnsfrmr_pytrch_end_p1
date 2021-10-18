@@ -76,7 +76,7 @@ an interesting discovery to old math problem ```log(a+b) != log(a) + log(b)```
 See the detailed [explanation](https://cdsmithus.medium.com/the-logarithm-of-a-sum-69dd76199790)
 
 
-## evaluating your results 
+## evaluating results 
 
 Evaluation functions determines the correct digits vs corrrect sums..
 
@@ -85,6 +85,8 @@ Evaluation functions determines the correct digits vs corrrect sums..
 
 ## Training Logs
 Printing the model, print twice since once on CPU and other on GPU
+
+_**Approach 1**_: 
 ```
 CustomCNN(
   (conv1): Conv2d(1, 6, kernel_size=(5, 5), stride=(1, 1))
@@ -106,8 +108,34 @@ CustomCNN(
   (one_hot_input): One_Hot(10)
 )
 ```
-Following are the training Logs... Loss is not reducing after trying various lr and batch sizes...
+_**Approach 2**_: 
+```
+CustomCNN(
+  (conv1): Conv2d(1, 6, kernel_size=(5, 5), stride=(1, 1))
+  (conv2): Conv2d(6, 12, kernel_size=(5, 5), stride=(1, 1))
+  (fc1): Linear(in_features=212, out_features=212, bias=True)
+  (fc2): Linear(in_features=212, out_features=100, bias=True)
+  (out1): Linear(in_features=100, out_features=10, bias=True)
+  (out2): Linear(in_features=100, out_features=19, bias=True)
+  (preprocess_rand1): Linear(in_features=10, out_features=20, bias=True)
+  (one_hot_input): One_Hot(10)
+)
+CrossEntropyLoss()
+CustomCNN(
+  (conv1): Conv2d(1, 6, kernel_size=(5, 5), stride=(1, 1))
+  (conv2): Conv2d(6, 12, kernel_size=(5, 5), stride=(1, 1))
+  (fc1): Linear(in_features=212, out_features=212, bias=True)
+  (fc2): Linear(in_features=212, out_features=100, bias=True)
+  (out1): Linear(in_features=100, out_features=10, bias=True)
+  (out2): Linear(in_features=100, out_features=19, bias=True)
+  (preprocess_rand1): Linear(in_features=10, out_features=20, bias=True)
+  (one_hot_input): One_Hot(10)
+)
+```
 
+Following are the training Logs... Loss is not reducing after trying various lr and batch sizes...However for **approach 2** we can see the loss reducing on both tasks compared to first one
+
+_**Approach 1**_: 
 ```
 epoch 0 total_correct_digits: 5842 digit_pred_loss: 2.367400884628296 total_correct_sum: 629 sum_pred_loss: 2.9444398880004883 loss: 1190.3136944770813
 epoch 1 total_correct_digits: 5842 digit_pred_loss: 2.367400884628296 total_correct_sum: 656 sum_pred_loss: 2.9444398880004883 loss: 1190.3136924505234
@@ -129,4 +157,28 @@ epoch 16 total_correct_digits: 5842 digit_pred_loss: 2.336150884628296 total_cor
 epoch 17 total_correct_digits: 5842 digit_pred_loss: 2.336150884628296 total_correct_sum: 670 sum_pred_loss: 2.9444398880004883 loss: 1190.3082259893417
 epoch 18 total_correct_digits: 5842 digit_pred_loss: 2.429900884628296 total_correct_sum: 670 sum_pred_loss: 2.9444398880004883 loss: 1190.3246340751648
 epoch 19 total_correct_digits: 5842 digit_pred_loss: 2.304900884628296 total_correct_sum: 652 sum_pred_loss: 2.9444398880004883 loss: 1190.30275785923
+```
+_**Approach 2**_: 
+
+```
+epoch 0 total_correct_digits: 52503 digit_pred_loss: 1.537688136100769 total_correct_sum: 18173 sum_pred_loss: 2.7267262935638428 loss: 906.4720330834389
+epoch 1 total_correct_digits: 57019 digit_pred_loss: 1.5231155157089233 total_correct_sum: 18671 sum_pred_loss: 2.755095958709717 loss: 881.3128862977028
+epoch 2 total_correct_digits: 57979 digit_pred_loss: 1.4840041399002075 total_correct_sum: 18823 sum_pred_loss: 2.8227696418762207 loss: 874.9735544323921
+epoch 3 total_correct_digits: 58095 digit_pred_loss: 1.5347189903259277 total_correct_sum: 19203 sum_pred_loss: 2.7243869304656982 loss: 873.1383193731308
+epoch 4 total_correct_digits: 58246 digit_pred_loss: 1.4637491703033447 total_correct_sum: 19679 sum_pred_loss: 2.7790379524230957 loss: 871.0021443367004
+epoch 5 total_correct_digits: 58323 digit_pred_loss: 1.470925211906433 total_correct_sum: 19978 sum_pred_loss: 2.592113494873047 loss: 869.6073899269104
+epoch 6 total_correct_digits: 58420 digit_pred_loss: 1.4931182861328125 total_correct_sum: 20081 sum_pred_loss: 2.8099162578582764 loss: 868.6069118976593
+epoch 7 total_correct_digits: 58502 digit_pred_loss: 1.464168667793274 total_correct_sum: 20802 sum_pred_loss: 2.7399444580078125 loss: 866.595516204834
+epoch 8 total_correct_digits: 58591 digit_pred_loss: 1.4899013042449951 total_correct_sum: 20767 sum_pred_loss: 2.691922664642334 loss: 866.0706045031548
+epoch 9 total_correct_digits: 58572 digit_pred_loss: 1.488847255706787 total_correct_sum: 20737 sum_pred_loss: 2.408898115158081 loss: 865.8504388928413
+epoch 10 total_correct_digits: 58663 digit_pred_loss: 1.5074833631515503 total_correct_sum: 20526 sum_pred_loss: 2.8230209350585938 loss: 865.8601441979408
+epoch 11 total_correct_digits: 58742 digit_pred_loss: 1.4617339372634888 total_correct_sum: 20727 sum_pred_loss: 2.559176206588745 loss: 864.884136736393
+epoch 12 total_correct_digits: 58783 digit_pred_loss: 1.4884133338928223 total_correct_sum: 20632 sum_pred_loss: 2.621716260910034 loss: 864.8818441033363
+epoch 13 total_correct_digits: 58836 digit_pred_loss: 1.4924062490463257 total_correct_sum: 20724 sum_pred_loss: 2.7204396724700928 loss: 864.3608465194702
+epoch 14 total_correct_digits: 58843 digit_pred_loss: 1.4715183973312378 total_correct_sum: 21729 sum_pred_loss: 2.6332216262817383 loss: 862.1037665009499
+epoch 15 total_correct_digits: 58918 digit_pred_loss: 1.463779330253601 total_correct_sum: 21869 sum_pred_loss: 2.634721040725708 loss: 861.4938675761223
+epoch 16 total_correct_digits: 58913 digit_pred_loss: 1.4612584114074707 total_correct_sum: 21848 sum_pred_loss: 2.722344160079956 loss: 861.3432287573814
+epoch 17 total_correct_digits: 58942 digit_pred_loss: 1.4681800603866577 total_correct_sum: 22188 sum_pred_loss: 2.6855862140655518 loss: 860.2746974229813
+epoch 18 total_correct_digits: 58966 digit_pred_loss: 1.4709911346435547 total_correct_sum: 22310 sum_pred_loss: 2.630023717880249 loss: 859.8432441353798
+epoch 19 total_correct_digits: 59042 digit_pred_loss: 1.4611618518829346 total_correct_sum: 22369 sum_pred_loss: 2.6546781063079834 loss: 859.3156518936157
 ```
