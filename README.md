@@ -5,7 +5,7 @@
 - Take whatever you want its free as in helium baloon, except where sources mentions specific licensing.
 - If you are taking problem definitions, Give credit to [The School of AI](https://theschoolof.ai/)
 
-**ToC**
-1. assignment_01 - Basic understanding about NN
-2. session_02 - Backpropagation using Excel sheet
-3. pytorch_intro - Basics of Pytorch with interesting NN/DataSet creation problem
+## **ToC**
+1. [assignment_01 - Basic understanding about NN](/assignment_01/.)
+2. [session_02 - Backpropagation using Excel sheet](/session_02/.)
+3. [pytorch_intro - Basics of Pytorch with interesting NN/DataSet creation problem](/pytorch_intro/.)
