@@ -1,6 +1,13 @@
-## Summary
+## Problem statement
 
-I have made two differeht attempts to solve the network or given problem.
+We are to solve for a neural network which outputs a sum of an image of a number between 0 & 9 and also a random number generated between 0 & 9
+
+![NN](/pytorch_intro/SampleNN.JPG)
+
+
+Nueral nets are not great at _solving linear equations_, this is an excersize in understanding PyTorch Data Loader and built an intution on nural net and their working.
+
+## Solution Summary
 
 1. Refer to **[PyTorchAssignment.ipynb](/pytorch_intro/PyTorchAssginment1.ipynb)** for below
 2. Refer to **[PyTorchAssginment1_multitask_Learning.ipynb](/pytorch_intro/PyTorchAssginment1_multitask_Learning.ipynb)** 
