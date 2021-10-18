@@ -24,6 +24,13 @@ This is the interesting part since ```log(a+b) != log(a) + log(b)```
 
 See the detailed [explanation](https://cdsmithus.medium.com/the-logarithm-of-a-sum-69dd76199790)
 
+following are different attempts made for choosing the Loss function:
+
+1. Cross Entropy for DigitRecognition & Random Sum - simple sum
+2. Cross Entropy for DigitRecognition & Random Sum - Weighted Sum, tried with different values (70-30), (90-10) weightages for digits and sums, this does change/reduce loss greatly
+3. Cross Entropy for Digit Recongnition & RMSE for Sum - with weighted average - does not work significatly different, may be it seems there is an error in RMSE function
+
+
 ## evaluating your results 
 
 Evaluation functions determines the correct digits vs corrrect sums..
@@ -56,13 +63,25 @@ CustomCNN(
 ```
 Following are the training Logs... Loss is not reducing after trying various lr and batch sizes...
 
-epoch 0 total_correct_digits: 5928 total_correct_sum: 6160 loss: 4906.605236053467
-epoch 1 total_correct_digits: 5929 total_correct_sum: 6088 loss: 4907.698986053467
-epoch 2 total_correct_digits: 5927 total_correct_sum: 6006 loss: 4909.011486053467
-epoch 3 total_correct_digits: 5927 total_correct_sum: 6026 loss: 4908.683361053467
-epoch 4 total_correct_digits: 5929 total_correct_sum: 5956 loss: 4909.761486053467
-epoch 5 total_correct_digits: 5928 total_correct_sum: 5988 loss: 4909.308361053467
-epoch 6 total_correct_digits: 5929 total_correct_sum: 5963 loss: 4909.683361053467
-epoch 7 total_correct_digits: 5928 total_correct_sum: 6023 loss: 4908.761486053467
-epoch 8 total_correct_digits: 5928 total_correct_sum: 5928 loss: 4910.292736053467
-epoch 9 total_correct_digits: 5929 total_correct_sum: 6025 loss: 4908.714611053467
+```
+epoch 0 total_correct_digits: 5842 digit_pred_loss: 2.367400884628296 total_correct_sum: 629 sum_pred_loss: 2.9444398880004883 loss: 1190.3136944770813
+epoch 1 total_correct_digits: 5842 digit_pred_loss: 2.367400884628296 total_correct_sum: 656 sum_pred_loss: 2.9444398880004883 loss: 1190.3136924505234
+epoch 2 total_correct_digits: 5842 digit_pred_loss: 2.273650884628296 total_correct_sum: 633 sum_pred_loss: 2.9444398880004883 loss: 1190.2972878217697
+epoch 3 total_correct_digits: 5842 digit_pred_loss: 2.398650884628296 total_correct_sum: 643 sum_pred_loss: 2.9444398880004883 loss: 1190.3191632032394
+epoch 4 total_correct_digits: 5842 digit_pred_loss: 2.398650884628296 total_correct_sum: 649 sum_pred_loss: 2.9444398880004883 loss: 1190.3191620111465
+epoch 5 total_correct_digits: 5842 digit_pred_loss: 2.273650884628296 total_correct_sum: 707 sum_pred_loss: 2.9444398880004883 loss: 1190.2972911596298
+epoch 6 total_correct_digits: 5842 digit_pred_loss: 2.367400884628296 total_correct_sum: 680 sum_pred_loss: 2.9444398880004883 loss: 1190.31369638443
+epoch 7 total_correct_digits: 5842 digit_pred_loss: 2.336150884628296 total_correct_sum: 650 sum_pred_loss: 2.9444398880004883 loss: 1190.3082275390625
+epoch 8 total_correct_digits: 5842 digit_pred_loss: 2.398650884628296 total_correct_sum: 644 sum_pred_loss: 2.9444398880004883 loss: 1190.3191647529602
+epoch 9 total_correct_digits: 5842 digit_pred_loss: 2.429900884628296 total_correct_sum: 635 sum_pred_loss: 2.9444398880004883 loss: 1190.3246309757233
+epoch 10 total_correct_digits: 5842 digit_pred_loss: 2.336150884628296 total_correct_sum: 668 sum_pred_loss: 2.9444398880004883 loss: 1190.3082257509232
+epoch 11 total_correct_digits: 5842 digit_pred_loss: 2.336150884628296 total_correct_sum: 645 sum_pred_loss: 2.9444398880004883 loss: 1190.3082253932953
+epoch 12 total_correct_digits: 5842 digit_pred_loss: 2.398650884628296 total_correct_sum: 697 sum_pred_loss: 2.9444398880004883 loss: 1190.3191641569138
+epoch 13 total_correct_digits: 5842 digit_pred_loss: 2.398650884628296 total_correct_sum: 716 sum_pred_loss: 2.9444398880004883 loss: 1190.3191641569138
+epoch 14 total_correct_digits: 5842 digit_pred_loss: 2.304900884628296 total_correct_sum: 651 sum_pred_loss: 2.9444398880004883 loss: 1190.302759885788
+epoch 15 total_correct_digits: 5842 digit_pred_loss: 2.336150884628296 total_correct_sum: 674 sum_pred_loss: 2.9444398880004883 loss: 1190.3082265853882
+epoch 16 total_correct_digits: 5842 digit_pred_loss: 2.336150884628296 total_correct_sum: 653 sum_pred_loss: 2.9444398880004883 loss: 1190.3082290887833
+epoch 17 total_correct_digits: 5842 digit_pred_loss: 2.336150884628296 total_correct_sum: 670 sum_pred_loss: 2.9444398880004883 loss: 1190.3082259893417
+epoch 18 total_correct_digits: 5842 digit_pred_loss: 2.429900884628296 total_correct_sum: 670 sum_pred_loss: 2.9444398880004883 loss: 1190.3246340751648
+epoch 19 total_correct_digits: 5842 digit_pred_loss: 2.304900884628296 total_correct_sum: 652 sum_pred_loss: 2.9444398880004883 loss: 1190.30275785923
+```
