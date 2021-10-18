@@ -20,7 +20,7 @@ And in cases where
   - ```predicted_image_digit >= sum``` *then* ```loss = cross_entropy(predictied_image_digit)```
   - ```predicted_image_digit <= sum``` *then* ```loss = cross_entropy(sum)```
 
-This is the interesting part since ```log(a+b) != log(a) + log(b)```
+an interesting discovery to old math problem ```log(a+b) != log(a) + log(b)```
 
 See the detailed [explanation](https://cdsmithus.medium.com/the-logarithm-of-a-sum-69dd76199790)
 
