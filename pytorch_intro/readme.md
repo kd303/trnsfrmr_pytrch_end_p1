@@ -7,10 +7,6 @@ Refer to ```MyDataset``` class which extends the MNIST and used in DataLoader
 
 Get-item method returns a tuple of four in size, image_data, image_label, random_number & sum of label and random_number
 
-For converting the random_number as one-hot encoded vector there are two approaches:
-1. Convert the number in Dataset class - simple operation using something like sci0kit or numpy
-2. Do it in the network itself, for which I created a simple OneHotEncoding  module [as discribed here](https://lirnli.wordpress.com/2017/09/03/one-hot-encoding-in-pytorch/
-), a [one-hot encoded module](https://colab.research.google.com/drive/1bIIBLis92uDNl4XJS67wyEEmGe7zjbmq#scrollTo=H1RhmT6BYe6U&line=3&uniqifier=1) so it can be used as a layer as well can be used in future. 
 
 **Overriden __getitem__ method of MNIST class**
 
@@ -31,6 +27,12 @@ For converting the random_number as one-hot encoded vector there are two approac
     return img, target, rand_input, rand_sum
 
 ```
+
+# For converting the random_number as one-hot encoded vector there are two approaches:
+1. Convert the number in Dataset class - simple operation using something like sci0kit or numpy
+2. Do it in the network itself, for which I created a simple OneHotEncoding  module [as discribed here](https://lirnli.wordpress.com/2017/09/03/one-hot-encoding-in-pytorch/
+), a [one-hot encoded module](https://colab.research.google.com/drive/1bIIBLis92uDNl4XJS67wyEEmGe7zjbmq#scrollTo=H1RhmT6BYe6U&line=3&uniqifier=1) so it can be used as a layer as well can be used in future. 
+
 
 ## How the two inputs are combined
 
