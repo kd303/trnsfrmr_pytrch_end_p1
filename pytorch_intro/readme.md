@@ -13,6 +13,16 @@ Refer to above image which describe the the concatination happens after image is
 
 ## Loss function selection and Why
 
+
+following are different attempts made for choosing the Loss function:
+
+1. Cross Entropy for DigitRecognition & Random Sum - simple sum
+2. Cross Entropy for DigitRecognition & Random Sum - Weighted Sum, tried with different values (70-30), (90-10) weightages for digits and sums, this does change/reduce loss greatly
+3. Cross Entropy for Digit Recongnition & RMSE for Sum - with weighted average - does not work significatly different, may be it seems there is an error in RMSE function
+
+_FootNote_:
+
+Here was my first thinking - basically based on log loss function intution, however that is not correct, basically the cross entropy is average of log loss of each class and hence below logic is **incorrect**, but keeping since it is good learning
 Even though we are summing in overall function, CrossEntropy was only kept as loss function. Here the Loss is calculated separatey
 
 And in cases where 
@@ -23,12 +33,6 @@ And in cases where
 an interesting discovery to old math problem ```log(a+b) != log(a) + log(b)```
 
 See the detailed [explanation](https://cdsmithus.medium.com/the-logarithm-of-a-sum-69dd76199790)
-
-following are different attempts made for choosing the Loss function:
-
-1. Cross Entropy for DigitRecognition & Random Sum - simple sum
-2. Cross Entropy for DigitRecognition & Random Sum - Weighted Sum, tried with different values (70-30), (90-10) weightages for digits and sums, this does change/reduce loss greatly
-3. Cross Entropy for Digit Recongnition & RMSE for Sum - with weighted average - does not work significatly different, may be it seems there is an error in RMSE function
 
 
 ## evaluating your results 
