@@ -1,4 +1,11 @@
-Refer to **[PyTorchAssignment.ipynb](/pytorch_intro/PyTorchAssginment1.ipynb)** for below
+Summary
+
+I have made two differeht attempts to solve the network or given problem.
+
+1. Refer to **[PyTorchAssignment.ipynb](/pytorch_intro/PyTorchAssginment1.ipynb)** for below
+2. Refer to **[PyTorchAssginment1_multitask_Learning.ipynb](/pytorch_intro/PyTorchAssginment1_multitask_Learning.ipynb)** 
+
+Fundamental difference between two approaches is: In the second approach train the softmax layer separately for digit recognition and sum and then apply same strategy for calculating loss function as described below.
 
 ## Data representation & Data generation Strategy
 
