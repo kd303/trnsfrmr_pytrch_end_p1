@@ -1,4 +1,4 @@
-Summary
+## Summary
 
 I have made two differeht attempts to solve the network or given problem.
 
@@ -43,7 +43,11 @@ Get-item method returns a tuple of four in size, image_data, image_label, random
 
 ## How the two inputs are combined
 
-![neuralnet](/pytorch_intro/nn.jpg) 
+Approach 1          |  Approach 2 (Separate Softmax)
+:----------------------:|:-------------------------:
+![neuralnet](/pytorch_intro/nn.jpg) | ![neuralnet](/pytorch_intro/approach2.JPG) 
+
+
 Refer to above image which describe the the concatination happens after image is passed throught convolution layers and random input is converted to one-hot encoded vector.
 
 Concating two tensor in PyTorch is a simple operation:
