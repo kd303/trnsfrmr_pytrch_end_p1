@@ -87,9 +87,11 @@ an interesting discovery to old math problem ```log(a+b) != log(a) + log(b)```
 See the detailed [explanation](https://cdsmithus.medium.com/the-logarithm-of-a-sum-69dd76199790)
 
 
-## evaluating results 
+## Evaluating results 
 
 Evaluation functions determines the correct digits vs corrrect sums..
+
+Validation dataloader should be created, due to time contraints it is not created
 
 
 
