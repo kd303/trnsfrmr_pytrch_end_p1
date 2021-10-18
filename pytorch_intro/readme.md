@@ -43,7 +43,7 @@ Get-item method returns a tuple of four in size, image_data, image_label, random
 
 ## How the two inputs are combined
 
-Approach 1          |  Approach 2 (Separate Softmax)
+Approach 1 (single softmax)         |  Approach 2 (Separate Softmax)
 :----------------------:|:-------------------------:
 ![neuralnet](/pytorch_intro/nn.jpg) | ![neuralnet](/pytorch_intro/approach2.JPG) 
 
