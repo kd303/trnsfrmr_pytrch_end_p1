@@ -14,7 +14,9 @@ Refer to above image which describe the the concatination happens after image is
 ## Loss function selection and Why
 
 
-following are different attempts made for choosing the Loss function:
+Following are different attempts made for choosing the Loss function:
+
+Idea was to take the average loss or weighted loss since the problem clearly states the accuracy of predicting sum is not as important as digits. So weighted loss will should have minimal impact on overall learning (ideally not consider at all?! :) )
 
 1. Cross Entropy for DigitRecognition & Random Sum - simple sum
 2. Cross Entropy for DigitRecognition & Random Sum - Weighted Sum, tried with different values (70-30), (90-10) weightages for digits and sums, this does change/reduce loss greatly
