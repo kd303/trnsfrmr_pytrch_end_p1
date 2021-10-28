@@ -10,4 +10,17 @@
  
  ![image](/session4-rnn_hands_on/16.gif)
 
-6. 
+6. Understading of LSTM with various gates
+
+7. Batch size and padding - GPU implication (BucketIterator) - why having different length matrix/vecotrs causes issues
+
+8. Embedding layer - basically learns the context in which the embedding is created. For example a word "red" if learnt in a car color good bad may learn differently from whether the sentence indicate whether the color represents danger or not. So embedding layer in a lay terms learns the memory of context, so for same vocabulary for two different task embedding for same word may be very different (*need to test this*)
+
+9. Dimension of embedding layer depends on the size of the dataset (cause number of dimensions requires the word to be used in that many sentences), size of the dimension would also increase the memory size requried to represent a word and eventually a sentence, would fit a smaller batch size on GPU compared to a embedding vector of smaller dimension.
+
+GloVE - dimension 300 dimension
+GPT3 - 12888 tokens -> $ 14 mn to train the model !
+
+
+
+
