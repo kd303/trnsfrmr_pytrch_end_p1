@@ -8,6 +8,6 @@
     
 5. For plain RNNs, as we pass the output from one neuron to another - the existing input would have larger impact and the context gets lost from earlier words See the image Representation purpose only (Source TSAI)
  
- ![image](./session4-rnn_hands_on/16.gif)
+ ![image](/session4-rnn_hands_on/16.gif)
 
 6. 
