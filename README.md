@@ -9,3 +9,4 @@
 1. [assignment_01 - Basic understanding about NN](/assignment_01/.)
 2. [session_02 - Backpropagation using Excel sheet](/session_02/.)
 3. [pytorch_intro - Basics of Pytorch with interesting NN/DataSet creation problem](/pytorch_intro/.)
+4. [Session 4 - RNN, LSTM Handson](/session4-rnn_handson/.)
