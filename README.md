@@ -6,7 +6,7 @@
 - If you are taking problem definitions, Give credit to [The School of AI](https://theschoolof.ai/)
 
 ## **ToC**
-1. [assignment_01 - Basic understanding about NN](/assignment_01/.)
+1. [session_01 - Basic understanding about NN](/assignment_01/.)
 2. [session_02 - Backpropagation using Excel sheet](/session_02/.)
-3. [pytorch_intro - Basics of Pytorch with interesting NN/DataSet creation problem](/pytorch_intro/.)
-4. [Session 4 - RNN, LSTM Handson](/session4-rnn_hands_on/.)
+3. [Session 03 - pytorch_intro - Basics of Pytorch with interesting NN/DataSet creation problem](/pytorch_intro/.)
+4. [Session 04 - RNN, LSTM Handson](/session4-rnn_hands_on/.)
