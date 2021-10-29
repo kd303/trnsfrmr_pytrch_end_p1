@@ -97,6 +97,8 @@ Evaluation functions determines the correct digits vs corrrect sums..
 
 Validation dataloader should be created, due to time contraints it is not created
 
+## Observation
+Have not copied the loss function to GPU device, how does this work?
 
 
 
