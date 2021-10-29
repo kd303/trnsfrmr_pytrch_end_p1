@@ -2,5 +2,5 @@
 
 Please see the link to below files for assigments
 
-1. [Assignment 1 - LSTM Implementation instead of RNN](/session4-rnn_hands_on/LSTM_wth_numpy_EVA_P2S3.ipynb)
+1. [Assignment 1 - LSTM Implementation instead of RNN](/session4-rnn_hands_on/END2_Session_4_IMDB_Sentiment_LSTM.ipynb)
 2. [Assignment 2 - Session 4 Assignment Solution](/session4-rnn_hands_on/LSTM_wth_numpy_EVA_P2S3.ipynb) - LSTM Implementation using numpy
