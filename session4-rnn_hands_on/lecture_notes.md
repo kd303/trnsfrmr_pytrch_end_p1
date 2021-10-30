@@ -21,6 +21,6 @@
 GloVE - dimension 300 dimension
 GPT3 - 12888 tokens -> $ 14 mn to train the model !
 
-
+10. RNN would loose the context over longer sequences but not in that short like 5-6 words. Usually 15-20 words
 
 
