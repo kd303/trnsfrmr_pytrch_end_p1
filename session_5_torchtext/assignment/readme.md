@@ -1,6 +1,6 @@
 ## Assignment 
 
-### Running [DBPedia](/session_5_torchtext/assignment/Assignment_DBPedia_torchtext.ipynb) classification using EmbeddingBag and simple neural net
+### Running [DBPedia](/session_5_torchtext/assignment/Assignment_DBPedia_torchtext.ipynb) classification using EmbeddingBag and simple neural net - accuracy 0.981 
 
 ### Runnng [YelpReviewPolarity](/session_5_torchtext/assignment/Assignment_YelpReviewPolarity_torchtext.ipynb) with same model - accuracy 0.932
 
