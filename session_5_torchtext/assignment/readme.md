@@ -2,7 +2,7 @@
 
 ### Running [DBPedia](/session_5_torchtext/assignment/Assignment_DBPedia_torchtext.ipynb) classification using EmbeddingBag and simple neural net
 
-### Runnng [YelpReviewPolarity]((/session_5_torchtext/assignment/Assignment_YelpReviewPolarity_torchtext.ipynb) with same model - accuracy 0.932
+### Runnng [YelpReviewPolarity](/session_5_torchtext/assignment/Assignment_YelpReviewPolarity_torchtext.ipynb) with same model - accuracy 0.932
 
 ###### Here are the training Logs for DBPedia Model : val_accuracy - 0.98
 
@@ -179,7 +179,7 @@
 | end of epoch   9 | time: 54.61s | valid accuracy    0.981 
 -----------------------------------------------------------
 ````
-
+### Runnng [YelpReviewPolarity](/session_5_torchtext/assignment/Assignment_YelpReviewPolarity_torchtext.ipynb) with same model - accuracy 0.932
 ###### Here are the training Logs for YelpReviewPolarity Model : val_accuracy - 0.932
 
 
