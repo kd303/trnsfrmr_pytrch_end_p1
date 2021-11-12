@@ -10,3 +10,4 @@
 2. [session_02 - Backpropagation using Excel sheet](/session_02/.)
 3. [Session 03 - pytorch_intro - Basics of Pytorch with interesting NN/DataSet creation problem](/pytorch_intro/.)
 4. [Session 04 - RNN, LSTM Handson](/session4-rnn_hands_on/.)
+5. [Session 05 - TorchText & Embedding Bag](/session_5_torchtext/.)
