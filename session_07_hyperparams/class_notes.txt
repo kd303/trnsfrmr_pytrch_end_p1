@@ -1,0 +1,25 @@
+
+L1 & L2
+
+L1 is stronger compared to L2
+L1 is usually works for lower wieghts, close to zero with lot of fully connected layer
+basically it throw away weights which does not have affect on results, does not work in CNN due to kernels
+
+
+One cycle policy - training neural net (low learning rate ..increase and then drop)
+For large models
+https://towardsdatascience.com/finding-good-learning-rate-and-the-one-cycle-policy-7159fe1db5d6
+
+Leslie Smith 
+https://www.youtube.com/watch?v=bR7z2MA0p-o&t=743s
+
+Taylor Expansion
+
+Youshio 
+
+SGD handles all weights, where the weights are moving in the same direction
+	- all kernels for example in CNN has to move in same direction (3*3 kernel)
+	- ADAM on the end specific FC layer each wieght can move independently, hence 
+	
+	Visualization
+https://github.com/lilipads/gradient_descent_viz
