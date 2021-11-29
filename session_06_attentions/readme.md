@@ -79,8 +79,7 @@ class dataset_parser:
          
          
      ### Sample Code
-         ```
-           def parseFile(self, file_type):
+               def parseFile(self, file_type):
                 lines = open(self.file_path, encoding='utf-8').read().strip().split('\n')
 
                 # for Quora dataset, ignore rest of the columns
@@ -90,6 +89,6 @@ class dataset_parser:
                     pairs = [[self.normalizeString(l.split('\t')[1]), self.normalizeString(l.split('\t')[2])] for l in lines[1:] if len(l.split('\t')) > 2]
                     # [pair for pair in pairs if len(pair[0].split(' ')) < MAX_LEN and len(pair[1].split(' ')) < MAX_LEN]
                return self.filter_pairs(pairs)
-            ```
+          
             
             
