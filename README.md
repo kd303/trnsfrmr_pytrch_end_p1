@@ -11,3 +11,5 @@
 3. [Session 03 - pytorch_intro - Basics of Pytorch with interesting NN/DataSet creation problem](/pytorch_intro/.)
 4. [Session 04 - RNN, LSTM Handson](/session4-rnn_hands_on/.)
 5. [Session 05 - TorchText & Embedding Bag](/session_5_torchtext/.)
+6. [Session 06 - Learning to Code Pytorch - with Attention Models](/session_06_attentions/.)
+7. [Session 07 - Hyperparameter, Learning rates & Evaluation Matrics](/session_07_hyperparams/.)
