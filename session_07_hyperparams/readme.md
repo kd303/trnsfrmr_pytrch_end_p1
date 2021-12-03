@@ -35,3 +35,8 @@ Equation
 **where log function is the log-likelyhood of ith token conditioned on the preceding tokens.. below is the Visual representation**
 
 ![Scale](/session_07_hyperparams/ppl_full.gif)
+
+## BERT Score
+BERTScore leverages the pre-trained contextual embeddings from BERT and matches words in candidate and reference sentences by cosine similarity. It has been shown to correlate with human judgment on sentence-level and system-level evaluation. Moreover, BERTScore computes precision, recall, and F1 measure, which can be useful for evaluating different language generation tasks
+
+It gives ```Pricision (P), Recall (R) and F1 scores for each pair given as inputs``` eventually a mean score can be calulated by calling ```mean()``` over the tensor
