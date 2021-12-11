@@ -26,7 +26,7 @@ BLEU Score |	Interpretation
 *   Also, for translation it is not evaluation, it just indicates how well a sentence is formed 
 *   Perplexity is a measurement of how well a probability distribution or probability model predicts a sample. It may be used to compare probability models. A low perplexity indicates the probability distribution is good at predicting the sample.
 *   In natural language processing, perplexity is a way of evaluating language models. A language model is a probability distribution over entire sentences or texts
-
+[Explaination](https://www.youtube.com/watch?v=oaYsCVtHveQ&t=416s)
 [Source: Huggingface](https://huggingface.co/docs/transformers/perplexity)
 
 Equation
