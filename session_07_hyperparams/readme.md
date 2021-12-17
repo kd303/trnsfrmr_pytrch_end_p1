@@ -32,6 +32,19 @@ BLEU Score |	Interpretation
 Equation
 ![PPLEquation](/session_07_hyperparams/ppl.jpg)
 
+
+Sample Logs 
+
+```
+## prints (time) (epoch %epochs complete) loss PPL(exp(loss))
+1m 56s (- 27m 6s) (5000 6%) 2.9732 19.5540
+3m 46s (- 24m 30s) (10000 13%) 2.4703 11.8258
+5m 35s (- 22m 21s) (15000 20%) 2.2577 9.5607
+7m 25s (- 20m 24s) (20000 26%) 2.1209 8.3387
+9m 15s (- 18m 30s) (25000 33%) 1.9935 7.3409
+11m 3s (- 16m 35s) (30000 40%) 1.9347 6.9220
+```
+
 **where log function is the log-likelyhood of ith token conditioned on the preceding tokens.. below is the Visual representation**
 
 ![Scale](/session_07_hyperparams/ppl_full.gif)
