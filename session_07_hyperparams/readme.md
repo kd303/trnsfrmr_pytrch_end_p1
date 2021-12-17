@@ -17,17 +17,6 @@ Where,
 :scream_cat: **Precision** : is basically matching uni, bi, tri and four grams in their matching counter part, so this may not work great for synomyms and it 
 
 ```
-Translated (truth):  i m exercising .
-Translated (pred):  i i i i i i i i i
-
-Translated (truth):  i m glad you re here .
-Translated (pred):  i i i i i i i i i
-
-Translated (truth):  you re very open .
-Translated (pred):  you you you you you you you you you
-
-Translated (truth):  you re through .
-Translated (pred):  re you re you re you re you re
 
 Translated (truth):  i am going down the stairs .
 Translated (pred):  you you you you you you you you you
@@ -156,3 +145,7 @@ P, R, F1 , P.mean().item(), R.mean().item(), F1.mean().item()
  0.7291461825370789,
  0.7582226395606995)
  ```
+ 
+ Similarity Matrix has some meaning, and can possibly a good way to visualize sentence formations etc.
+ 
+ ![Image](/session_07_hyperparams/sim_matrix.PNG)
