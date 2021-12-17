@@ -133,3 +133,26 @@ Sample Logs
 BERTScore leverages the pre-trained contextual embeddings from BERT and matches words in candidate and reference sentences by cosine similarity. It has been shown to correlate with human judgment on sentence-level and system-level evaluation. Moreover, BERTScore computes precision, recall, and F1 measure, which can be useful for evaluating different language generation tasks
 
 It gives ```Pricision (P), Recall (R) and F1 scores for each pair given as inputs``` eventually a mean score can be calulated by calling ```mean()``` over the tensor
+
+For a randomly selected 30 sentences, here is the score:
+
+```
+P, R, F1 , P.mean().item(), R.mean().item(), F1.mean().item()
+
+
+(tensor([0.8241, 0.8008, 0.8118, 0.8094, 0.8173, 0.8402, 0.7852, 0.8336, 0.8435,
+         0.8424, 0.8159, 0.8200, 0.8134, 0.8202, 0.8253, 0.8239, 0.8125, 0.7973,
+         0.8298, 0.8139, 0.8074, 0.8159, 0.7920, 0.8616, 0.8208, 0.8167, 0.8240,
+         0.8062, 0.8278, 0.7671]),
+ tensor([0.7624, 0.7605, 0.0000, 0.7764, 0.7833, 0.7261, 0.7617, 0.8072, 0.7409,
+         0.7395, 0.7836, 0.7429, 0.7780, 0.7664, 0.7975, 0.7614, 0.7322, 0.7220,
+         0.7500, 0.7444, 0.7621, 0.7457, 0.7413, 0.7245, 0.7410, 0.7973, 0.7377,
+         0.7310, 0.7609, 0.6966]),
+ tensor([0.7920, 0.7802, 0.0000, 0.7926, 0.8000, 0.7790, 0.7733, 0.8202, 0.7889,
+         0.7876, 0.7995, 0.7795, 0.7953, 0.7924, 0.8111, 0.7914, 0.7703, 0.7578,
+         0.7879, 0.7776, 0.7841, 0.7792, 0.7658, 0.7871, 0.7788, 0.8069, 0.7785,
+         0.7668, 0.7929, 0.7301]),
+ 0.8173344135284424,
+ 0.7291461825370789,
+ 0.7582226395606995)
+ ```
