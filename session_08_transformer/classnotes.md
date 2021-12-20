@@ -20,8 +20,10 @@
      
      **q<sub>i</sub> = W<sub>q</sub>x<sub>i</sub>**    , **k<sub>i</sub> = W<sub>k</sub>x<sub>i</sub>**, **v<sub>i</sub> = W<sub>v</sub>x<sub>i</sub>**
      
-     **w<sub>ij</sub><sup>'</sup> = q<sub>i</sub><sup>T</sub>k<sub>j</sub>**
+     **w<sub>ij</sub><sup>'</sup> = q<sub>i</sub><sup>T</sup>k<sub>j</sub>**
+     
      **w<sub>ij</sub> = Softmax(w<sub>ij</sub><sup>'</sup>)**
+     
      **y<sub>i</sub> = &Sigma;<sub>j</sub>w<sub>ij</sub>v<sub>j</sub>**
 
 4. Key-Value-Qeury is data structure analogy, where a unique Key is associated with a query and it returns a value. In Self-attention little libral/softer version is for every key in the store that matches the queries, all are returned and we take sum weighted by to which extent the query matches the key
