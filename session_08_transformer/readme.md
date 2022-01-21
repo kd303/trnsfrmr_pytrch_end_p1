@@ -1,6 +1,14 @@
 # Transformer Implementation using PyTorch
 
-## implementation of language translation model from Frech to English translation
+[notebook](./assignment_transformers_session10.ipynb)  for implementation transformer models using PyTorch
+
+## Blogs I have enjoyed reading and understanding
+1. http://peterbloem.nl/blog/transformers
+2. [Illustrated Transformer](http://jalammar.github.io/illustrated-transformer/)
+
+all understanding, images are from above two blogs.
+
+## Implementation of language translation model from Frech to English translation
 
 Class used: [IWSLT2016](https://pytorch.org/text/stable/datasets.html#id17)
 Reduced Vocabulary - buld_vocab considered min_freq as 2, there 15 million+ parameters to be learned with same class, hence reduced the dimesion
