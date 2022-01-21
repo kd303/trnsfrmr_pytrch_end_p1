@@ -26,4 +26,4 @@ Epoch: 10, Train loss: 1.619, Train PPL:   5.046 | Val loss: 1.541, Val. PPL:   
 
 This is just to understand the code, check the notebook for implementation
 
-![image](/session_08_transformer/Transformer.PNG)
+![image](./Transformer.PNG)
