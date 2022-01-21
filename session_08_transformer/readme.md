@@ -3,7 +3,7 @@
 ## implementation of language translation model from Frech to English translation
 
 Class used: [IWSLT2016](https://pytorch.org/text/stable/datasets.html#id17)
-Reduced Vocabulary - buld_vocab considered min_freq as 2
+Reduced Vocabulary - buld_vocab considered min_freq as 2, there 15 million+ parameters to be learned with same class, hence reduced the dimesion
 
 # Following are the logs
 
@@ -24,6 +24,6 @@ Epoch: 10, Train loss: 1.619, Train PPL:   5.046 | Val loss: 1.541, Val. PPL:   
 ## Class Design used
 
 
-This is just to understand the code, check the notebook for implementation
+This is just to understand the code, check the [notebook](./assignment_transformers_session10.ipynb) for implementation
 
 ![image](./Transformer.PNG)
