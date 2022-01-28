@@ -54,3 +54,24 @@ Evaluating: 100%|██████████| 425/425 [02:01<00:00,  3.50it/s
   "best_f1_thresh": -0.23991966247558594
 }
 ```
+
+
+
+### 2. Task 2 : Fine Tunning BERT for classification
+
+[NoteBook](/session_09_bert/classification_bert/BERT_Fine_Tuning_Sentence_Classification_v4.ipynb)
+Credit to [Chris McCormick and Nick Ryan](https://mccormickml.com/2019/07/22/BERT-fine-tuning/) for producing original work, I have only added the predictor part to the notebook, bit lazily :) , yet managed
+
+```
+Text                                                                                                	     Predicted      	       Actual       
+Somebody just left - guess who.                                                                     	         1          	         1          
+They claimed they had settled on something, but it wasn't clear what they had settled on.           	         1          	         1          
+If Sam was going, Sally would know where.                                                           	         1          	         1          
+They're going to serve the guests something, but it's unclear what.                                 	         1          	         1          
+She's reading. I can't imagine what.                                                                	         1          	         1          
+John said Joan saw someone from her graduating class.                                               	         1          	         1          
+John ate dinner but I don't know who.                                                               	         1          	         0          
+She mailed John a letter, but I don't know to whom.                                                 	         1          	         0          
+I served leek soup to my guests.                                                                    	         1          	         1          
+I served my guests.                                                                                 	         1          	         1   
+```
