@@ -60,6 +60,49 @@ Evaluating: 100%|██████████| 425/425 [02:01<00:00,  3.50it/s
 [NoteBook](/session_09_bert/classification_bert/BERT_Fine_Tuning_Sentence_Classification_v4.ipynb)
 Credit to [Chris McCormick and Nick Ryan](https://mccormickml.com/2019/07/22/BERT-fine-tuning/) for producing original work, I have only added the predictor part to the notebook, bit lazily :) , yet managed
 
+### Training Logs
+
+```
+======== Epoch 3 / 4 ========
+Training...
+  Batch    40  of    241.    Elapsed: 0:00:08.
+  Batch    80  of    241.    Elapsed: 0:00:16.
+  Batch   120  of    241.    Elapsed: 0:00:25.
+  Batch   160  of    241.    Elapsed: 0:00:33.
+  Batch   200  of    241.    Elapsed: 0:00:41.
+  Batch   240  of    241.    Elapsed: 0:00:49.
+
+  Average training loss: 0.20
+  Training epcoh took: 0:00:49
+
+Running Validation...
+  Accuracy: 0.84
+  Validation Loss: 0.49
+  Validation took: 0:00:02
+
+======== Epoch 4 / 4 ========
+Training...
+  Batch    40  of    241.    Elapsed: 0:00:08.
+  Batch    80  of    241.    Elapsed: 0:00:16.
+  Batch   120  of    241.    Elapsed: 0:00:25.
+  Batch   160  of    241.    Elapsed: 0:00:33.
+  Batch   200  of    241.    Elapsed: 0:00:41.
+  Batch   240  of    241.    Elapsed: 0:00:49.
+
+  Average training loss: 0.15
+  Training epcoh took: 0:00:49
+
+Running Validation...
+  Accuracy: 0.85
+  Validation Loss: 0.50
+  Validation took: 0:00:02
+
+Training complete!
+Total training took 0:03:25 (h:mm:ss)
+```
+
+
+### Evaluation outcome
 ```
 Text                                                                                                	     Predicted      	       Actual       
 Somebody just left - guess who.                                                                     	         1          	         1          
