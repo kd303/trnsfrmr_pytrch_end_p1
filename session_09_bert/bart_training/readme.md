@@ -10,7 +10,7 @@ Run history:
 
 Training loss	█▂▃▄▄▄▅▃▄▃▃▃▂▂▃▃▃▄▃▁▂▂▂▃▂▃▃▂▂▄▂▂▃▂▂▂▃▂▂▃
 global_step	▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▆▇▇▇▇▇███
-lr	▁▂▄▅▇██████▇▇▇▇▇▇▇▇▇▆▆▆▆▆▆▆▆▆▆▅▅▅▅▅▅▅▅▅▅
+lr		▁▂▄▅▇██████▇▇▇▇▇▇▇▇▇▆▆▆▆▆▆▆▆▆▆▅▅▅▅▅▅▅▅▅▅
 
 Run summary:
 
@@ -26,8 +26,9 @@ To disable this warning, you can either:
 	- Avoid using `tokenizers` before the fork if possible
 	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
 Syncing run young-oath-2 to Weights & Biases (docs).
-Epochs 1/2. Running Loss: 0.6679: 60%
-
+Epochs 1/2. Running Loss: 0.5045: 100%
+1452/1452 [13:37<00:00, 1.87it/s]
+INFO:simpletransformers.seq2seq.seq2seq_model:Saving model into outputs/checkpoint-1452-epoch-1
 
 ```
 
