@@ -1,6 +1,6 @@
-## BERT & BART
+# BERT & BART
 
-### 1. Task 1 : Replicating BERT Training
+## 1. Task 1 : Replicating BERT Training
 
 [Notebook](/session_09_bert/bert_qna/BERT_Tutorial_How_To_Build_a_Question_Answering_Bot.ipynb) for building Q&A bot using BERT
 
@@ -55,9 +55,7 @@ Evaluating: 100%|██████████| 425/425 [02:01<00:00,  3.50it/s
 }
 ```
 
-
-
-### 2. Task 2 : Fine Tunning BERT for classification
+## 2. Task 2 : Fine Tunning BERT for classification
 
 [NoteBook](/session_09_bert/classification_bert/BERT_Fine_Tuning_Sentence_Classification_v4.ipynb)
 Credit to [Chris McCormick and Nick Ryan](https://mccormickml.com/2019/07/22/BERT-fine-tuning/) for producing original work, I have only added the predictor part to the notebook, bit lazily :) , yet managed
