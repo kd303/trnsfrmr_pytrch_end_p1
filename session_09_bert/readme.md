@@ -24,6 +24,11 @@ Epoch: 100%|██████████| 1/1 [50:00<00:00, 3000.47s/it]
 ### Samples output
 
 ```
+"56ddde6b9a695914005b9628": "France",
+"56ddde6b9a695914005b9629": "10th and 11th centuries",
+"56ddde6b9a695914005b962a": "Denmark, Iceland and Norway",
+"56ddde6b9a695914005b962b": "Rollo",
+"56ddde6b9a695914005b962c": "10th",
 ```
 
 ### Evaluation Output
