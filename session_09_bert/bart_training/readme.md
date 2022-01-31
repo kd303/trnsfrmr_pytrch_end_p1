@@ -1,7 +1,7 @@
 # BART for Paraphrasing with Simple Transformers
 
 Thanks to original author [Thilina Rajapakse](www.linkedin.com/in/t-rajapakse/) for producing the original work
-- [Notebook](session_09_bert/bart_training)
+- [Notebook](session_09_bert/bart_training/bart_training_paraphrasing.ipynb)
 - [WandDb Reports](session_09_bert/bart_training/WandDB_BART_Paraphrasing–WeightsBiases.pdf)
 ## Training Logs
 
