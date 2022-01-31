@@ -2,7 +2,7 @@
 
 Thanks to original author [Thilina Rajapakse](www.linkedin.com/in/t-rajapakse/) for producing the original work
 - [Notebook](session_09_bert/bart_training)
-- [WandDb Reports](session_09_bert/bart_training/WandDB report for BART _ Paraphrasing with BART – Weights & Biases.pdf)
+- [WandDb Reports](session_09_bert/bart_training/WandDB_BART_Paraphrasing–WeightsBiases.pdf)
 ## Training Logs
 
 ```
