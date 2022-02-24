@@ -17,4 +17,4 @@
 9. [Session 09 - BERT/BART](/session_09_bert/.)
 10. [Session 10 - SageMaker-usage and training](/session_010/sagemaker/.)
 11. [Session 11 - Transformer Memory Differentialble Search Index](/session_011_dsi/.)
-12. [Miscellanious Readings](/misc/.
+12. [Miscellanious Readings](/misc/.)
