@@ -15,3 +15,5 @@
 7. [Session 07 - Hyperparameter, Learning rates & Evaluation Matrics](/session_07_hyperparams/.)
 8. [Session 08 - Transformers using PyTorch](/session_08_transformer/.)
 9. [Session 09 - BERT/BART](/session_09_bert/.)
+10.[Session 10 - SageMaker-usage and training)(/session_010/sagemaker/.)
+11.[Session 11 - Transformer Memory Differentialble Search Index(/session_011/dsi/.)
