@@ -23,6 +23,15 @@ So following are the main tasks for which we need to solve for:
 4. Infer the trained model to find argmax Pr(j|q) - basically query q to docid j
 5. Optionally apply ranking - using beam search
 
+### Expected outcome
+
+A **unified model** consisting following:
+
+**indexing** : A DSI model should learn the associate the content of each document d with its corrospinding docid j - straight-forward seq2seq approach, take document token   as inputs and generate identifiers as output (task 3)
+
+**Retrieval** : given a query, a DSI model should return a ranked list of candidate docids, achieved via [Autoregressive generation](https://www.georgeho.org/deep-autoregressive-models/)
+
+
 ## Limitations
 
 - It is not clear how the incremental update will work - as in the model updates, one approach is as suggested in the [paper](https://proceedings.mlr.press/v119/sun20b.html)
