@@ -1,6 +1,6 @@
 # Transformer Memory as a Differentialble Search Index
 
-Google research paper published on [arXiv:2202.06991v2 16 Feb 2022](https://arxiv.org/pdf/2202.06991.pdf)
+Google research paper published on [arXiv:2202.06991v2 16 Feb 2022](https://arxiv.org/pdf/2202.06991.pdf), all content, images credits to quoted paper, unless mentioned otherwise.
 
 ## Basic Understanding
 
@@ -9,14 +9,14 @@ Fundamental difference in traditional search approach is to encode-retrieve & ra
 ![image](https://user-images.githubusercontent.com/16409185/156111474-25fe0258-f344-47ab-bfdb-ea1646e73057.png)
 
 
-## Task for information retrival
+## Tasks for information retrival
 
 This is something which we will concentrate on, for solving the code. How various tasks are used in Machine Learning are equivalent to IR - information retrieval
 
 ![image](https://user-images.githubusercontent.com/16409185/156112405-751de3ad-9645-4956-8025-c7fec1b6b064.png)
 
 So following are the main tasks for which we need to solve for:
-
+## Tasks
 1. Doc (d) and Query (q) represetnation
 2. Docid(j) representation
 3. Train the model (mapping document d to docid j)
