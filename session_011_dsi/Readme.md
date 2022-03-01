@@ -17,9 +17,9 @@ This is something which we will concentrate on, for solving the code. How variou
 
 So following are the main tasks for which we need to solve for:
 ## Tasks
-1. [Doc (d) and Query (q) represetnation](./session_011_dsi/doc_representation.md)
-2. [Docid(j) representation](./session_011_dsi/docid_representation.md)
-3. [Train the model (mapping document d to docid j)](./session_011_dsi/T5_training.md)
+1. [Doc (d) and Query (q) represetnation](/session_011_dsi/doc_representation.md)
+2. [Docid(j) representation](/session_011_dsi/docid_representation.md)
+3. [Train the model (mapping document d to docid j)](/session_011_dsi/T5_training.md)
 4. Infer the trained model to find argmax Pr(j|q) - basically query q to docid j
 5. Optionally apply ranking - using beam search
 
