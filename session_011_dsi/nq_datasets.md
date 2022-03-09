@@ -70,14 +70,14 @@ Important JSON elements
 # High-level Data Processing strategy 
 
 1. Consider document_html tag for document processing
-2. from the HTML - extract only paragraph tags <P>, rest of the dasta has tables, spans etc. which would not make lot of sense
-3. From the paragraph tag
-    a. remove anchor tags, only consider html
-    b. Remove spans and styling elements
-    c. Remove the style element tags <UL>, etc
+2. from the HTML - extract only paragraph tags ```<P>```, rest of the dasta has tables, spans etc. which would not make lot of sense
+3. From the paragraph tag:
+   - remove anchor tags, only consider html
+   - Remove spans and styling elements
+   - Remove the style element tags ```<UL>```, etc
 4. Alternative to 4 is (Much cleaner approach, at first):
-    a.  utilize the attribute token information, search for <P> elements in attributes
-    b.  append all attributes in sequential order, if an english word then append, till </P> is reached
+   - utilize the attribute token information, search for ```<P>``` elements in attributes
+   - append all attributes in sequential order, if an english word then append, till ```</P>``` is     reached
   
 
 
