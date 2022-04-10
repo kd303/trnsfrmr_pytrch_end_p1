@@ -10,13 +10,23 @@ Fundamental difference in traditional search approach is to encode-retrieve & ra
 
 ## DSI Architecture
 
-In DSI, the **index is stored in the model parameters**, and _**indexing is simply another kind of model training.**_ Figure 1
-suggests one approach to indexing a corpus: namely, to train on:
+From the Paper, Page 2, _Paragraph on indexing_: 
 
-  1. examples (d<sub>j</sub> , j) that pair document **d<sub>j</sub>** with its **docid j**, in addition to 
-  2. examples (q, j) that pair a query **q** with a relevant **docid j**. 
+> In DSI, the **index is stored in the model parameters**, and _**indexing is simply another kind of model training.**_ Figure 1
+> suggests one approach to indexing a corpus: namely, to train on:
+>
+>  1. examples (d<sub>j</sub> , j) that pair document **d<sub>j</sub>** with its **docid j**, in addition to 
+>  2. examples (q, j) that pair a query **q** with a relevant **docid j**. 
 
-In this setup the examples of type (1) are “indexing” examples.
+> In this setup the examples of type (1) are “indexing” examples.
+
+> We also explore a number of alternative multi-task optimization and curriculum learning schemes for combining these types of examples.
+
+Section **3.3 Training and Optimization**
+
+> We explored two main strategies for training DSI models
+> 1.  is to first train a model to perform indexing (memorization), followed by a fine-tuning stage where the trained model is used to map queries to docids (e.g., retrieval).
+> 2.  to train them together in a multi-task setup. To this end, we frame co-training tasks in similar fashion to T5-style co-training (e.g., using task prompts to differentiate them)
 
 
 ## Tasks for information retrival
