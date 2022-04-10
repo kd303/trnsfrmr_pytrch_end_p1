@@ -51,7 +51,7 @@ Key Learnings:
 1. [Contrastive learning](https://towardsdatascience.com/understanding-contrastive-learning-d5b19fd96607) 
 2. [Latent space](https://hackernoon.com/latent-space-visualization-deep-learning-bits-2-bd09a46920df)
 3. [Manifold Learning - An approach to dimensionality reduction](https://scikit-learn.org/stable/modules/manifold.html) <br/>
-    a. PCA, LDA, Independent Component Analysis - linear projection of data - misses important **non-linear structure in data**
+    a. PCA, LDA, Independent Component Analysis - linear projection of data - misses important **non-linear structure in data** <br/>
     b. Manifold is as an attempt to generalize linear frameworks like PCA {hint! : Isomaps - earth maps?}
 4. 
   
