@@ -8,6 +8,16 @@ Fundamental difference in traditional search approach is to encode-retrieve & ra
 
 ![image](https://user-images.githubusercontent.com/16409185/156111474-25fe0258-f344-47ab-bfdb-ea1646e73057.png)
 
+## DSI Architecture
+
+In DSI, the **index is stored in the model parameters**, and _**indexing is simply another kind of model training.**_ Figure 1
+suggests one approach to indexing a corpus: namely, to train on:
+
+  1. examples (d<sub>j</sub> , j) that pair document **d<sub>j</sub>** with its **docid j**, in addition to 
+  2. examples (q, j) that pair a query **q** with a relevant **docid j**. 
+
+In this setup the examples of type (1) are “indexing” examples.
+
 
 ## Tasks for information retrival
 
