@@ -54,3 +54,4 @@ Key Learnings:
     a. PCA, LDA, Independent Component Analysis - linear projection of data - misses important **non-linear structure in data**
     b. Manifold is as an attempt to generalize linear frameworks like PCA {hint! : Isomaps - earth maps?}
 4. 
+  
